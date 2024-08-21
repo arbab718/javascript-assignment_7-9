@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let subject1 = prompt("Enter the name of the first subject:");
+      let subject2 = prompt("Enter the name of the second subject:");
+      let subject3 = prompt("Enter the name of the third subject:");
+
+      const totalMarksPerSubject = 100;
+
+      let marks1 = parseInt(prompt(`Enter the obtained marks for ${subject1}:`));
+      let marks2 = parseInt(prompt(`Enter the obtained marks for ${subject2}:`));
+      let marks3 = parseInt(prompt(`Enter the obtained marks for ${subject3}:`));
+    
+      let totalMarksObtained = marks1 + marks2 + marks3;
+      let totalMarks = totalMarksPerSubject * 3;
+      let percentage = (totalMarksObtained / totalMarks) * 100;
+
+      document.write(`<h2>Marks Summary</h2>`);
+      document.write(`(${subject1}): ${marks1}/${totalMarksPerSubject}<br>`);
+      document.write(`(${subject2}): ${marks2}/${totalMarksPerSubject}<br>`);
+      document.write(`(${subject3}): ${marks3}/${totalMarksPerSubject}<br>`);
+      document.write(`<br><b>Total Marks Obtained:</b> ${totalMarksObtained}/${totalMarks}<br>`);
+      document.write(`<b>Percentage:</b> ${percentage.toFixed(2)}%`);
+    </script>
+  </head>
+  <body></body>
+</html>
